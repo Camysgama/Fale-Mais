@@ -1,12 +1,14 @@
 import "reflect-metadata";
 import express from "express";
+import { router } from "./routes";
 
 import "./database";
 
 const app = express();
 
-app.get('/', (req, res) => {
-    return res.send("oi, foi");
-})
+app.use(express.json());
+
+//inserindo rotas no express
+app.use(router);
 
 app.listen(3333, () => console.log("Server is running"));

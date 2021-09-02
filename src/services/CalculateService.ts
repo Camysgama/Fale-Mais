@@ -1,3 +1,5 @@
+
+import { getCustomRepository } from "typeorm";
 import { UserRepository } from "../repositories/UserRepository"
 
  
@@ -11,7 +13,7 @@ import { UserRepository } from "../repositories/UserRepository"
  
  class CalculateService{
      async execute({origin, destiny, time, plan}: IUserRequest) {
-         const userRepository = new UserRepository();
+         const userRepository = getCustomRepository(UserRepository); //instanciando repositório
 
         if(!origin || !destiny ||  !time || !plan) {
              throw new Error("Insira corretamente o campo");  
