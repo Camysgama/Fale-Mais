@@ -7,3 +7,5 @@ class UserRepository extends Repository<User>{
 }
 
 export { UserRepository }   
+
+//acesso e interação com as entidades do banco de dados
