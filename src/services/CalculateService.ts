@@ -14,10 +14,12 @@ interface  IUserRequest{
  class CalculateService{ 
      async execute({origin, destiny, time, plan}: IUserRequest) {
          const userRepository = getCustomRepository(UserRepository); //instanciando repositório
-
         if(!origin || !destiny ||  !time || !plan) {
            throw new Error("Insira corretamente o campo");
-        }else {
+        }else if(time <=0){
+            throw new Error("Por favor insira o tempo válido!")
+        }
+        else {
          
          //criar dados dentro da base de dados
          const passData = userRepository.create({

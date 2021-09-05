@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    height: 550px;
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 0 50px;
+    border-radius: 10px;
+}
+.form-title{
+    margin-bottom: 0;
+}
+.field{
+    height: 40px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    outline: none;
+}
+
+field{
+    margin-top: 20px;
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: #fff;
+    height: 50px;
+    margin: 30px 0;
+}
+.button:active {
+    background-color: darkblue;
+}
+
+.card {
+    width: 100px;
+    height: 80px;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.title {
+    border-bottom: 1px solid #aaa;
+}
+
+#erro {
+    visibility: hidden;
+    margin: 0;
+    margin-top: 5px;
+    color: lightcoral;
+}

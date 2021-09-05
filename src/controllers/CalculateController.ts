@@ -9,7 +9,6 @@ class CalculateController {
         //recuperando informação 
         const {origin, destiny, time, plan} = request.body;
         
-
         const calculateService = new CalculateService();
         const tarifServ = new TarifService();
         const priceServ = new PriceService();
