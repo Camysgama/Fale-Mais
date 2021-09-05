@@ -15,7 +15,7 @@ interface  IUserRequest{
      async execute({origin, destiny, time, plan}: IUserRequest) {
          const userRepository = getCustomRepository(UserRepository); //instanciando repositório
         if(!origin || !destiny ||  !time || !plan) {
-           throw new Error("Insira corretamente o campo");
+            throw new Error("Insira corretamente o campo");
         }else if(time <=0){
             throw new Error("Por favor insira o tempo válido!")
         }
