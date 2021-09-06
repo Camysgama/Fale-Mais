@@ -26,10 +26,4 @@ yarn dev
 - [Beekeeper](https://www.beekeeperstudio.io/)
 - [Insomnia](https://insomnia.rest/)
 #
-
-### 🔥 Pagina Web da Aplicação
-
-Acesse e teste o projeto a partir [daqui](). 
-
-#
 Feito com ❤️ por Camilly Gama
