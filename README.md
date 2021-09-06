@@ -27,9 +27,4 @@ yarn dev
 - [Insomnia](https://insomnia.rest/)
 #
 
-### 🔥 Pagina Web da Aplicação
-
-Acesse e teste o projeto a partir [daqui](). 
-
-#
 Feito com ❤️ por Camilly Gama
