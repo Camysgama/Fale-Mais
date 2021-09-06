@@ -9,7 +9,7 @@ export class UserData1630374691188 implements MigrationInterface {
                 columns:[
                     {
                         name: "id",
-                        type: "uuid", //id unico e universal
+                        type: "uuid",
                         isPrimary: true
                     },
                     {
@@ -43,6 +43,3 @@ export class UserData1630374691188 implements MigrationInterface {
     }
 
 }
-
-
-// up e down  tem o poder de fzr e desfazer migrations caso ocorra algum erro 

@@ -9,11 +9,12 @@ import "./database";
 const app = express();
 
 app.use(express.json());
-
 //inserindo rotas no express
 app.use(router);
+//inserindo front
+app.use(express.static('Client'))
 
-app.use((err:Error, request: Request, response: Response, next: NextFunction) => {
+app.use((err:Error, request: Request, response: Response, next: NextFunction) => {   
     if(err instanceof Error){
         return response.status(422).json({
             error: err.message

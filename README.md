@@ -1,31 +1,35 @@
 # Fale-Mais-Vizir
- 
 
+### 👍 Rodando a Aplicação
 
-    //receber o tempo de chamada
+```bash
+# Clone este repositório
+$ git clone https://github.com/Camysgama/Fale-Mais.git
 
-    //receber o ddd de origem
+# Acesse a pasta do projeto 
+$ cd Fale-Mais
 
-    //receber o ddd de destino
- 
-    //receber o plano (faleMaisX) (X pode ser 30 60 120)
+# Instale as dependências
+yarn install
 
-    //Reduzir do tempo de chamada pelo valor do plano x (se tem 60 minutos de chamada e o plano é de 30 minutos o restante é igual a 30)
-    
-    //Qual a tarifa do minuto? Relacionar a origem e o destino! (Se origem for igual a 11 e destino igual a 16 tarifa = 1.90)
-    
-    //Tarifas possiveis? (1.90, 2.70 ....);
+# Execute o projeto
+yarn dev
+```
+#
+### 🛠️ Tecnologias utilizadas
+####  Ferramentas utilizadas ao decorrer do projeto
 
-    //if destino igual origem x tarifa vai ser igual a x
+- [Typescript](https://www.typescriptlang.org/)
+- [MySqlite](https://www.sqlite.org/index.html)
+- [Express](https://expressjs.com/pt-br/)
+- [TypeORM](https://typeorm.io/#/)
+- [Beekeeper](https://www.beekeeperstudio.io/)
+- [Insomnia](https://insomnia.rest/)
+#
 
-    // O que temos até o momento? Tempo reduzido, a tarifa
+### 🔥 Pagina Web da Aplicação
 
-    //Só paga minutos execedentes a X, com + 10% da tarifa
+Acesse e teste o projeto a partir [daqui](). 
 
-    // fazer minutos restantes + (tarifa + 10%);
-
-    // minutos + tarifa;
-
-    // retornar todos os dados coletados!
-
-    // separar rotas e informações
+#
+Feito com ❤️ por Camilly Gama

@@ -7,7 +7,7 @@ class TarifService{
 
     async calculate({origin, destiny}: TarifType) {
         
-        if(origin === 11 && destiny === 16){
+        if(origin === 11 && destiny === 16  || origin === 18 && destiny === 11){
             const tarifa = 1.90
             return tarifa;
         }
@@ -28,11 +28,10 @@ class TarifService{
             const tarifa = 0.90
             return tarifa;
         }
-        else if(origin === 18 && destiny === 11){
-            const tarifa = 1.90
-            return tarifa;
-        }     
+        else {
+            return 0;
+        }
     }
 }
 
-export {TarifService};
+export { TarifService }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Fale Mais</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form">
+            <h1 class="form-title">Calcule o Plano</h1>
+
+            <field>DDD de Origem</field>
+            <select class="field" name="origin" required>
+                <option value=""> Selecione um DDD </option>
+                <option value=11> 11 </option>
+                <option value=16> 16 </option>
+                <option value=17> 17 </option>
+                <option value=18> 18 </option>
+            </select>
+    
+            <field>DDD de Destino</field>
+            <select class="field" name="destiny" required>
+                <option value=""> Selecione um DDD </option>
+                <option value=11> 11 </option>
+                <option value=16> 16 </option>
+                <option value=17> 17 </option>
+                <option value=18> 18 </option>
+            </select>
+    
+            <field>Tempo de Chamada</field>
+            <input id="time" class="field" placeholder="Minutos Falados" required type="number" />
+            <p id="erro">Por favor insira um tempo válido!</p>
+    
+            <field>Plano Fale Mais</field>
+            <select class="field" name="plan" required>
+                <option value=""> Selecione um plano</option>
+                <option value=30> Fale Mais 30 </option>
+                <option value=60> Fale Mais 60 </option>
+                <option value=120> Fale Mais 120 </option>
+            </select>
+    
+            <button class="button" type="submit"> Calcular </button>
+        </form>
+        <div id="cards" class="card">
+            <div class="title">
+                <h3>Com Plano</h3>
+            </div>
+            <div>
+                <p id="price"></p>
+            </div>
+        </div>
+        <div id="cards" class="card">
+            <div class="title">
+                <h3>Sem Plano</h3>
+            </div>
+            <div>
+                <p id="price"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"><script />
+</script>
+</html>

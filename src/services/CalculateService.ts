@@ -1,28 +1,26 @@
 
 import { getCustomRepository } from "typeorm";
 import { UserRepository } from "../repositories/UserRepository"
-import { TarifService } from "./TarifService";
 
- 
 
- interface  IUserRequest{
+ //dados que terão que ser requeridos e executados pela classe  
+interface  IUserRequest{
      origin: number;
      destiny: number;
      time: number;
      plan: number
  }
- //dados que terão que ser requeridos e executados pela classe   
- 
- class CalculateService extends TarifService{ 
+
+ class CalculateService{ 
      async execute({origin, destiny, time, plan}: IUserRequest) {
          const userRepository = getCustomRepository(UserRepository); //instanciando repositório
-
         if(!origin || !destiny ||  !time || !plan) {
-           throw new Error("Insira corretamente o campo");
-        }else {
-
-         //const tarif = TarifService.calculate(origin, destiny);
-
+            throw new Error("Insira corretamente o campo");
+        }else if(time <=0){
+            throw new Error("Por favor insira o tempo válido!")
+        }
+        else {
+         
          //criar dados dentro da base de dados
          const passData = userRepository.create({
             origin,
@@ -32,14 +30,9 @@ import { TarifService } from "./TarifService";
         })
 
         await userRepository.save(passData);
-
         return passData;
         }
-
      }
-
  }
 
-
  export { CalculateService }
- //recebe os dados da req e 
