@@ -1,13 +1,11 @@
-
 interface PriceType {
     time: number;
     plan: number;
-    tarifa: number;
+    tarif: number;
 }
-
 class PriceService{
-    async resultate ({time, plan, tarifa}: PriceType){
-        const withouPlan = (tarifa * time);
+    async resultate ({time, plan, tarif}: PriceType){
+        const withouPlan = (tarif * time);
         
         if (plan >= time ){
             const withPlan = 0;
@@ -15,11 +13,11 @@ class PriceService{
             return {withPlan, withouPlan};
             
         }else if(plan <= time){
-            const withPlan = (time - plan) * (tarifa + ((tarifa/100) * 10));
+            const withPlan = (time - plan) * (tarif + ((tarif/100) * 10));
 
-            return {withPlan , withouPlan};   
+            return {withPlan, withouPlan};   
         }     
     }
 }
 
-export {PriceService}
+export { PriceService }

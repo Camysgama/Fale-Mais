@@ -32,11 +32,9 @@ body {
     border-radius: 10px;
     outline: none;
 }
-
 field{
     margin-top: 20px;
 }
-
 .button {
     border: none;
     border-radius: 10px;
@@ -48,7 +46,6 @@ field{
 .button:active {
     background-color: darkblue;
 }
-
 .card {
     width: 100px;
     height: 80px;
@@ -64,14 +61,12 @@ field{
 .title {
     border-bottom: 1px solid #aaa;
 }
-
-#erro {
+#error {
     visibility: hidden;
     margin: 0;
     margin-top: 5px;
     color: lightcoral;
 }
-
 @media screen and (max-width: 768px){
     .container{
         Flex-direction: column;
