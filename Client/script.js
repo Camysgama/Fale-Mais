@@ -1,7 +1,7 @@
 const form = document.getElementById('form')
 const selects = document.querySelectorAll('select')
 const input = document.getElementById('time')
-const erro = document.getElementById('erro')
+const error = document.getElementById('error')
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
     if(input.value >= 1){
         handleData()
     } else {
-        erro.style.visibility = 'visible'
+        error.style.visibility = 'visible'
     }
 })
 
@@ -45,7 +45,7 @@ selects.forEach(select => select.addEventListener('change', () => {
 }))
 
 async function handleData(){
-    erro.style.visibility = 'hidden'
+    error.style.visibility = 'hidden'
 
     const origin = parseInt(form.elements['origin'].value)
     const destiny = parseInt(form.elements['destiny'].value)
